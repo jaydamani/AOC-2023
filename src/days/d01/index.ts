@@ -1,9 +1,8 @@
 export function solvePart1(input: string) {
   return input
     .trim()
-    .replaceAll(/[^0-9\n]/gm, "")
+    .replaceAll(/[^0-9\n]/g, "")
     .split("\n")
-    .map((str) => Number(str[0] + str.at(-1)))
-    .reduce((a, b) => a + b)
+    .reduce((a, b) => a + Number(b[0] + b.at(-1)), 0)
     .toString();
 }
