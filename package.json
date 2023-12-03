@@ -1,0 +1,21 @@
+{
+  "name": "aoc-2023",
+  "version": "1.0.0",
+  "repository": "https://github.com/jaydamani/AOC-2023.git",
+  "main": "dist/index.js",
+  "author": "jaydamani <jaydamani567@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@sapphire/ts-config": "^5.0.0",
+    "@types/node": "^20.10.2",
+    "vitest": "^0.34.6"
+  },
+  "scripts": {
+    "test": "vitest",
+    "start": "node",
+    "watch": "node_modules/.bin/tsc -w",
+    "build": "node_modules/.bin/tsc",
+    "init:day": "cp -r $INIT_CWD/src/days/d00 $INIT_CWD/src/days/d$1"
+  },
+  "packageManager": "yarn@4.0.2"
+}

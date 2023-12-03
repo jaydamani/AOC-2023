@@ -1,0 +1,13 @@
+{
+  "extends": ["@sapphire/ts-config", "@sapphire/ts-config/extra-strict"],
+  "compilerOptions": {
+    "skipLibCheck": true,
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "baseUrl": "./src",
+    "paths": {
+      "@utils": ["./utils/index"],
+      "@input/*": ["../input/*"]
+    }
+  }
+}
