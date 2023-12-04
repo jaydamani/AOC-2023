@@ -1,15 +1,15 @@
 import { createInterface, Interface } from "node:readline/promises";
 
 export async function getDayAndPart(): Promise<[string, number]> {
-  const rl = createInterface({
-    input: process.stdin,
-    output: process.stdout,
-  });
   if (process.env.DAY)
     return [
       process.env.DAY.padStart(2, "0"),
       parseInt(process.env.PART ?? "1"),
     ];
+  const rl = createInterface({
+    input: process.stdin,
+    output: process.stdout,
+  });
   const day = await prompt({
     rl,
     name: "day",
