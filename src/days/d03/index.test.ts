@@ -7,26 +7,25 @@ import {
 } from "./index";
 
 const part1In = `
-12.......*..
-+.........34
-.......-12..
-..78........
-..*....60...
-78..........
-.......23...
-....90*12...
-............
-2.2......12.
-.*.........*
-1.1.......56
+467..114..
+...*......
+..35..633.
+......#...
+617*......
+.....+.58.
+..592.....
+......755.
+...$.*....
+.664.598..
+
 `;
-const part1Ans = `413`;
+const part1Ans = `4361`;
 test("solution for " + basename(__dirname) + " part 1", () => {
   expect(solvePart1(part1In)).toBe(part1Ans);
 });
 
 const part2In = part1In;
-const part2Ans = "6756";
+const part2Ans = "467835";
 test("solution for " + basename(__dirname) + " part 2", () => {
   expect(solvePart2(part2In)).toBe(part2Ans);
 });
